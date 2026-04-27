@@ -199,7 +199,7 @@ def popular_baseline_recommendations(global_popular_products, n):
 
 def main():
     #Путь к файлу с сессиями
-    file_path = r"C:\Users\Lola\Desktop\STUDY_OF_HSE\SBER\sessions.jsonl"
+    file_path = os.path.join(os.path.dirname(__file__), "sessions.jsonl")
 
     #Загружаем данные
     sessions = load(file_path)
